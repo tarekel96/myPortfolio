@@ -90,10 +90,10 @@ export default class Resume extends Component {
       </section>
     );
   }
-displaySkills = function() {
+/* displaySkills = function() {
   if(document.getElementById("skillsDiv").onClick = function(){
     document.getElementById("skillsDiv").style.visibility.visible
   })
-}
+} */
   // document.getClassByName("bars").style.visibility.visible
 }
