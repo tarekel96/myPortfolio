@@ -23,7 +23,7 @@
 /* ------------------------------------------------------------------ */
 
 body {
-  /* background: darkolivegreen; */
+  background: lightseagreen;
 }
 
 /* ------------------------------------------------------------------ */
@@ -327,7 +327,7 @@ ul#nav li.current a {
 #resume .info {
   font: 16px/24px "librebaskerville-italic", serif;
   color: #6e7881;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
   /* margin-top: 9px; */
 }
 #resume .info span {
@@ -542,8 +542,9 @@ ul#nav li.current a {
   background: url("../images/lightRedBackground.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 0 auto;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 #projectRow {
@@ -784,7 +785,7 @@ ul#nav li.current a {
 #call-to-action h2 {
   font: 28px/36px "opensans-bold", sans-serif;
   color: #ebeeee;
-  margin-bottom: 6px;
+  /* margin-bottom: 6px; */
 }
 #call-to-action h2 a {
   color: inherit;
@@ -996,7 +997,44 @@ call-to-action .button {
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
-#contact {
+/* making the contact form words larger */
+#contactHead {
+  font-size: 60px;
+}
+#nameHead {
+  font-size: 20px;
+}
+#emailHead {
+  font-size: 20px;
+}
+#messageHead {
+  font-size: 20px;
+}
+/* gives the form space from testimonal */
+#contactContainer {
+  padding-top: 10px;
+  align-content: center;
+  border: lightseagreen solid 20px;
+  border-bottom: none;
+  background-image: url("https://i.imgur.com/wFzJ7Vy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#nameInput {
+  width: 60%;
+}
+
+#emailInput {
+  width: 60%;
+}
+
+#messageInput {
+  width: 80%;
+  height: 300px;
+}
+
+/* #contact {
   background: #191919;
   padding-top: 96px;
   padding-bottom: 102px;
@@ -1047,10 +1085,10 @@ call-to-action .button {
 }
 #contact .header-col {
   padding-top: 6px;
-}
+} */
 
 /* contact form */
-#contact form {
+/* #contact form {
   margin-bottom: 30px;
 }
 #contact label {
@@ -1125,10 +1163,10 @@ call-to-action .button {
   position: relative;
   left: 18px;
   top: 17px;
-}
+} */
 
 /* Twitter Feed */
-#twitter {
+/* #twitter {
   margin-top: 12px;
   padding: 0;
 }
@@ -1143,7 +1181,7 @@ call-to-action .button {
   font: 13px/36px "opensans-regular", Sans-serif;
   color: #474747 !important;
   border: none;
-}
+} */
 
 /* ------------------------------------------------------------------ */
 /* i. Footer
@@ -1151,11 +1189,12 @@ call-to-action .button {
 
 footer {
   padding-top: 48px;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
   color: #303030;
   font-size: 14px;
   text-align: center;
   position: relative;
+  background-color: lightseagreen;
 }
 
 footer a,

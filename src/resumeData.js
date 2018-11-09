@@ -113,12 +113,13 @@ let resumeData = {
   ],
   testimonials: [
     {
-      description: "This is a sample testimonial",
-      name: "Some technical guy"
+      description: "I want to put a ding in the universe.",
+      name: "Steve Jobs"
     },
     {
-      description: "This is a sample testimonial",
-      name: "Some technical guy"
+      description:
+        "If you're afraid to fail, then you're probably going to fail.",
+      name: "Kobe Bryant"
     }
   ]
 };
