@@ -23,7 +23,7 @@
 /* ------------------------------------------------------------------ */
 
 body {
-  background: darkolivegreen;
+  /* background: darkolivegreen; */
 }
 
 /* ------------------------------------------------------------------ */
@@ -206,7 +206,7 @@ ul#nav li.current a {
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
-#about {
+/* #about {
   background: #2b2b2b;
   padding-top: 96px;
   padding-bottom: 66px;
@@ -224,9 +224,9 @@ ul#nav li.current a {
 
 #about h2 {
   font: 22px/30px "opensans-bold", sans-serif;
-  color: #fff;
-  margin-bottom: 12px;
-}
+  color: #fff; */
+/* margin-bottom: 12px; */
+/* }
 #about p {
   line-height: 30px;
   color: #7a7a7a;
@@ -258,7 +258,7 @@ ul#nav li.current a {
 #about .download .button i {
   margin-right: 15px;
   font-size: 20px;
-}
+} */
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -328,7 +328,7 @@ ul#nav li.current a {
   font: 16px/24px "librebaskerville-italic", serif;
   color: #6e7881;
   margin-bottom: 18px;
-  margin-top: 9px;
+  /* margin-top: 9px; */
 }
 #resume .info span {
   margin-right: 5px;
@@ -336,7 +336,7 @@ ul#nav li.current a {
 }
 #resume .date {
   font: 15px/24px "opensans-regular", sans-serif;
-  margin-top: 6px;
+  /* margin-top: 6px; */
 }
 
 /*----------------------------------------------*/
@@ -542,7 +542,7 @@ ul#nav li.current a {
   background: url("../images/lightRedBackground.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 20px auto 20px auto;
+  margin: 0 auto 20px auto;
   width: 100%;
 }
 

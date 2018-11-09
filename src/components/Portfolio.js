@@ -7,7 +7,6 @@ export default class Porfolio extends Component {
       <Grid className="projects">
         <h2 id="appHeading">Applications</h2>
         <Row id="projectRow">
-          {/* <Row id="innerRow"> */}
           <Col xs={10} md={6}>
             <Thumbnail
               id="firstProject"
