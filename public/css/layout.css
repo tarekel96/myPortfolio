@@ -350,6 +350,7 @@ ul#nav li.current a {
   background-color: rgb(79, 77, 77);
 }
 .bars {
+  margin-top: 50px;
   /* visibility: hidden; */
   width: 95%;
   float: left;
@@ -538,7 +539,9 @@ ul#nav li.current a {
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 .projects {
-  background-color: darkolivegreen;
+  background: url("../images/lightRedBackground.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: 20px auto 20px auto;
   width: 100%;
 }
@@ -547,8 +550,28 @@ ul#nav li.current a {
   margin-top: 20px;
 }
 
+#appHeading {
+  text-align: center;
+  color: white;
+}
+
+/* put image for projects */
 #firstProject {
   src: local("./images/portfolio/ombdMovie.png");
+}
+
+#secondProject {
+  src: local("./images/portfolio/socialSportsMeetup.png");
+}
+
+#colProjectThree {
+  align-content: center;
+  margin: 0 auto;
+}
+
+#thirdProject {
+  src: local("./images/portfolio/ombdMovie.png");
+  margin: 0 auto;
 }
 
 #portfolio {

@@ -100,13 +100,14 @@ let resumeData = {
       imgurl: "images/portfolio/omdbMovie.png"
     },
     {
-      name: "project2",
-      description: "mobileapp",
+      name: "Social Sports MeetUp",
+      description:
+        "Sports networking app that brings together its users to sports client-created events.",
       imgurl: "images/portfolio/project.jpg"
     },
     {
-      name: "project3",
-      description: "mobileapp",
+      name: "Manage your Virtual Piggy",
+      description: "Simple finance app that is ideal for children.",
       imgurl: "images/portfolio/project2.png"
     }
   ],

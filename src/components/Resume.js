@@ -5,10 +5,10 @@ export default class Resume extends Component {
     super(props);
     this.state = {
       skills:
-        resumeData.skills &&
+        // resumeData.skills &&
         resumeData.skills.map(item => {
           return (
-            <li>
+            <li id="skillsList" /* style={{ visibility: "hidden" }} */>
               <span className={`bar-expand ${item.skillname.toLowerCase()}`} />
               <em>{item.skillname}</em>
             </li>
@@ -19,9 +19,10 @@ export default class Resume extends Component {
   preview = () => {
     this.setState({ visibility: "visible" });
   };
-  // viewSkills() {
-  //   this.setState({ skills: !this.state.skills });
-  // }
+  hide_preview = () => {
+    this.setState({ visibility: "hidden" });
+  };
+
   render() {
     // let resumeData = this.props.resumeData;
     return (
@@ -87,17 +88,23 @@ export default class Resume extends Component {
             <h1>
               <span>Skills</span>
             </h1>
+            <div />
           </div>
-          <button id="viewButton" onClick={this.preview}>
-            View
-          </button>
-          <div className="nine columns main-col">
-            <p>{resumeData.skillsDescription}</p>
 
+          {/* <button
+            id="viewButton"
+               onClick={function() {
+              document.getElementbyId("skillsList").style.visibility =
+                "visible";
+            }} 
+          >
+            View
+          </button> */}
+          <div>
             <div
-              className="bars"
-              id="skillsDiv"
-              style={{ visibility: this.state.visibility }}
+              className="bars post_preview"
+              id="skillsDiv postpreview"
+              // style={{ visibility: "hidden" }}
             >
               {this.state.skills}
             </div>
@@ -106,10 +113,8 @@ export default class Resume extends Component {
       </section>
     );
   }
-  /* displaySkills = function() {
-  if(document.getElementById("skillsDiv").onClick = function(){
-    document.getElementById("skillsDiv").style.visibility.visible
-  })
-} */
+  displaySkills = function() {
+    this.state.skills.getElementbyId("skillsList").style.visibility = "visible";
+  };
   // document.getClassByName("bars").style.visibility.visible
 }
