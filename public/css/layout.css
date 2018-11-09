@@ -350,7 +350,7 @@ ul#nav li.current a {
   background-color: rgb(79, 77, 77);
 }
 .bars {
-  visibility: hidden;
+  /* visibility: hidden; */
   width: 95%;
   float: left;
   padding: 0;

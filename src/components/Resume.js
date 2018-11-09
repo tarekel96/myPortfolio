@@ -1,7 +1,29 @@
 import React, { Component } from "react";
+import resumeData from "../resumeData";
 export default class Resume extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      skills:
+        resumeData.skills &&
+        resumeData.skills.map(item => {
+          return (
+            <li>
+              <span className={`bar-expand ${item.skillname.toLowerCase()}`} />
+              <em>{item.skillname}</em>
+            </li>
+          );
+        })
+    };
+  }
+  preview = () => {
+    this.setState({ visibility: "visible" });
+  };
+  // viewSkills() {
+  //   this.setState({ skills: !this.state.skills });
+  // }
   render() {
-    let resumeData = this.props.resumeData;
+    // let resumeData = this.props.resumeData;
     return (
       <section id="resume">
         <div className="row education">
@@ -66,31 +88,25 @@ export default class Resume extends Component {
               <span>Skills</span>
             </h1>
           </div>
-          <button id="viewButton">View</button>
+          <button id="viewButton" onClick={this.preview}>
+            View
+          </button>
           <div className="nine columns main-col">
             <p>{resumeData.skillsDescription}</p>
 
-            <div className="bars" id="skillsDiv">
-              <ul className="skills">
-                {resumeData.skills &&
-                  resumeData.skills.map(item => {
-                    return (
-                      <li>
-                        <span
-                          className={`bar-expand ${item.skillname.toLowerCase()}`}
-                        />
-                        <em>{item.skillname}</em>
-                      </li>
-                    );
-                  })}
-              </ul>
+            <div
+              className="bars"
+              id="skillsDiv"
+              style={{ visibility: this.state.visibility }}
+            >
+              {this.state.skills}
             </div>
           </div>
         </div>
       </section>
     );
   }
-/* displaySkills = function() {
+  /* displaySkills = function() {
   if(document.getElementById("skillsDiv").onClick = function(){
     document.getElementById("skillsDiv").style.visibility.visible
   })
