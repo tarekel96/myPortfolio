@@ -7,6 +7,38 @@ export default class Porfolio extends Component {
       <Grid className="projects">
         <h2 id="appHeading">Applications</h2>
         <Row id="projectRow">
+          <Col xs={10} md={6} id="colProjectThree">
+            <Thumbnail
+              id="thirdProject"
+              src="https://i.imgur.com/V2nqr4p.png"
+              alt="Project 3"
+            >
+              <h3>
+                MERN (MongoDB_Express_React_NodeJS) with JSON Web Tokens -
+                Personal Boilerplate
+              </h3>
+              <p>
+                This application uses the MERN stack technologies that is
+                compatible with JWT’s, so I can start with this Boilerplate for
+                my future MERN stack projects
+              </p>
+              <p>
+                <strong>
+                  <span>Technologies used: </span>
+                </strong>
+                <p>
+                  MERN, HTML, CSS, Javascript, React Bootstrap, JSON Web Tokens
+                </p>
+                <Button
+                  target="_blank"
+                  bsStyle="default"
+                  href="https://github.com/tarekel96/MERN-JWT-Boilerplate"
+                >
+                  More info
+                </Button>
+              </p>
+            </Thumbnail>
+          </Col>
           <Col xs={10} md={6}>
             <Thumbnail
               id="firstProject"
@@ -24,6 +56,7 @@ export default class Porfolio extends Component {
               <p>OMDb api, Firebase Realtime Database, HTML, CSS, JavaScript</p>
               <p>
                 <Button
+                  target="_blank"
                   bsStyle="default"
                   href="https://github.com/tarekel96/Actors-and-Movies"
                 >
@@ -52,32 +85,9 @@ export default class Porfolio extends Component {
               </p>
               <p>
                 <Button
+                  target="_blank"
                   bsStyle="default"
                   href="https://github.com/tarekel96/BootcampAssign-GroupProject2"
-                >
-                  More info
-                </Button>
-              </p>
-            </Thumbnail>
-          </Col>
-          <Col xs={10} md={6} id="colProjectThree">
-            <Thumbnail
-              id="thirdProject"
-              src="https://i.imgur.com/gGO8HUT.png"
-              alt="Project 3"
-            >
-              <h3>Manage Your Virtual Piggy</h3>
-              <p>Simple finance app that is ideal for children.</p>
-              <p>
-                <strong>
-                  <span>Technologies used: </span>
-                </strong>
-                <p>
-                  MERN, HTML, CSS, Javascript, React Bootstrap, JSON Web Tokens
-                </p>
-                <Button
-                  bsStyle="default"
-                  href="https://github.com/tarekel96/projectThree"
                 >
                   More info
                 </Button>
