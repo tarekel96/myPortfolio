@@ -106,9 +106,11 @@ let resumeData = {
       imgurl: "images/portfolio/project.jpg"
     },
     {
-      name: "Manage your Virtual Piggy",
-      description: "Simple finance app that is ideal for children.",
-      imgurl: "images/portfolio/project2.png"
+      name:
+        "MERN (MongoDB_ExpressJs_ReactJs_NodeJs) stack app with JSON Web Tokens",
+      description:
+        "An application that I intend to use as a boilerplate for future MERN stack applications.",
+      imgurl: "https://i.imgur.com/V2nqr4p.png"
     }
   ],
   testimonials: [
