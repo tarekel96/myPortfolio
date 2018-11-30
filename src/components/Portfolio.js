@@ -94,6 +94,32 @@ export default class Porfolio extends Component {
               </p>
             </Thumbnail>
           </Col>
+          <Col xs={10} md={6} id="colProjectThree">
+            <Thumbnail
+              id="fourthProject"
+              src="https://i.imgur.com/hTI2b9W.png"
+              alt="Project 4"
+            >
+              <h3>Tic Tacs & Toes Game</h3>
+              <p>
+                A spin off of the original Tic Tac Toe Game that is similar to
+                the one found from React's official tutorial.
+              </p>
+              <p>
+                <strong>
+                  <span>Technologies used: </span>
+                </strong>
+                <p>React, React Bootstrap, NodeJS</p>
+                <Button
+                  target="_blank"
+                  bsStyle="default"
+                  href="https://github.com/tarekel96/secondTicTacToeGame"
+                >
+                  More info
+                </Button>
+              </p>
+            </Thumbnail>
+          </Col>
           {/* </Row> */}
         </Row>
       </Grid>

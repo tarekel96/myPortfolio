@@ -539,12 +539,19 @@ ul#nav li.current a {
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 .projects {
-  background: url("../images/lightRedBackground.png");
-  background-repeat: no-repeat;
+  background-image: url("../images/lightRedBackground.png");
+  /* background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 auto 0 auto;
-  width: 100%;
+  width: 100%; */
   padding-bottom: 30px;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #projectRow {
@@ -573,6 +580,11 @@ ul#nav li.current a {
 #thirdProject {
   src: local("./images/portfolio/ombdMovie.png");
   margin: 0 auto;
+}
+
+#fourthProject {
+  src: local("./images/portfolio/Picture1.png");
+  margin-bottom: 100px;
 }
 
 #portfolio {
