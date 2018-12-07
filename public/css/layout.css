@@ -35,7 +35,7 @@ header {
   height: 800px;
   min-height: 500px;
   width: 100%;
-  background: #161415 url(../images/transparentGreenCircuit.png) no-repeat top
+  background: #161415 url(./images/transparentGreenCircuit.png) no-repeat top
     center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
@@ -539,7 +539,7 @@ ul#nav li.current a {
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 .projects {
-  background-image: url("../images/lightRedBackground.png");
+  background-image: url("./images/portfolioBackgroundRed.png");
   /* background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 auto 0 auto;
@@ -827,7 +827,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
+  background: #1f1f1f url(./images/testimonials-bg.jpg) no-repeat center center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;

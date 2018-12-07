@@ -1,5 +1,5 @@
 let resumeData = {
-  imagebaseurl: "https://rbhatia46.github.io/",
+  imagebaseurl: "https://rbhatia46.github.io/", // not necessary?
   name: "Tarek El-Hajjaoui",
   role: "Full Stack Web Developer",
   linkedinId: "0a2b1a132",
@@ -96,8 +96,8 @@ let resumeData = {
     {
       name: "OMDb Movie Finder",
       description:
-        "Movie app that allows its users to search for any movie from the OMDb api and find some basic info about the movie.",
-      imgurl: "images/portfolio/omdbMovie.png"
+        "Movie app that allows its users to search for any movie from the OMDb api and find some basic info about the movie."
+      // imgurl: "images/portfolio/omdbMovie.png"
     },
     {
       name: "Social Sports MeetUp",

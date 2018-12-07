@@ -10,7 +10,7 @@ export default class Porfolio extends Component {
           <Col xs={10} md={6} id="colProjectThree">
             <Thumbnail
               id="thirdProject"
-              src="https://i.imgur.com/V2nqr4p.png"
+              src={require("../images/jwt-mern.png")}
               alt="Project 3"
             >
               <h3>
@@ -42,7 +42,7 @@ export default class Porfolio extends Component {
           <Col xs={10} md={6}>
             <Thumbnail
               id="firstProject"
-              src="https://i.imgur.com/roy1bdQ.png"
+              src={require("../images/ombdMovie.png")}
               alt="Project 1"
             >
               <h3>OMDb Movie Finder</h3>
@@ -68,7 +68,7 @@ export default class Porfolio extends Component {
           <Col xs={10} md={6}>
             <Thumbnail
               id="secondProject"
-              src="https://i.imgur.com/gGO8HUT.png"
+              src={require("../images/socialSportsMeetup.png")}
               alt="Project 2"
             >
               <h3>Social Sports MeetUp</h3>
@@ -97,7 +97,7 @@ export default class Porfolio extends Component {
           <Col xs={10} md={6} id="colProjectThree">
             <Thumbnail
               id="fourthProject"
-              src="https://i.imgur.com/hTI2b9W.png"
+              src={require("../images/toesntictacs.png")}
               alt="Project 4"
             >
               <h3>Tic Tacs & Toes Game</h3>
