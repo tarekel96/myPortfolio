@@ -113,6 +113,13 @@ export default class Porfolio extends Component {
                 <Button
                   target="_blank"
                   bsStyle="default"
+                  href="https://sleepy-lake-88286.herokuapp.com/"
+                >
+                  Heroku link
+                </Button>
+                <Button
+                  target="_blank"
+                  bsStyle="default"
                   href="https://github.com/tarekel96/secondTicTacToeGame"
                 >
                   More info
