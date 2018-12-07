@@ -100,7 +100,7 @@ export default class Porfolio extends Component {
               src={require("../images/toesntictacs.png")}
               alt="Project 4"
             >
-              <h3>Tic Tacs & Toes Game</h3>
+              <h3>Tic Tacs and Toes</h3>
               <p>
                 A spin off of the original Tic Tac Toe Game that is similar to
                 the one found from React's official tutorial.
