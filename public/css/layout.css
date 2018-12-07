@@ -326,7 +326,7 @@ ul#nav li.current a {
 } */
 #resume .info {
   font: 16px/24px "librebaskerville-italic", serif;
-  color: #6e7881;
+  /* color: #6e7881; */
   /* margin-bottom: 18px; */
   /* margin-top: 9px; */
 }
@@ -347,28 +347,30 @@ ul#nav li.current a {
 #viewButton {
   margin-top: 5px;
   color: rgb(208, 216, 204);
-  background-color: rgb(79, 77, 77);
+  /* background-color: rgb(79, 77, 77); */
 }
 .bars {
-  margin-top: 50px;
+  margin-top: 10px;
   /* visibility: hidden; */
   width: 95%;
   float: left;
   padding: 0;
   text-align: left;
+  color: black;
 }
-.bars .skills {
+/* .bars .skills {
   margin-top: 36px;
   list-style: none;
-}
+} */
 .bars li {
   position: relative;
-  margin-bottom: 60px;
-  background: #ccc;
-  height: 42px;
-  border-radius: 3px;
+  color: black;
+  /* border: normal darkgray; */
+  /* background: #ccc; */
+  /* height: 42px; */
+  /* border-radius: 3px; */
 }
-.bars li em {
+/* .bars li em {
   font: 15px "opensans-bold", sans-serif;
   color: #313131;
   text-transform: uppercase;
@@ -376,8 +378,8 @@ ul#nav li.current a {
   font-weight: normal;
   position: relative;
   top: -36px;
-}
-.bar-expand {
+} */
+/* .bar-expand {
   position: absolute;
   left: 0;
   top: 0;
@@ -389,7 +391,7 @@ ul#nav li.current a {
   height: 42px;
   line-height: 42px;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 .mern {
   width: 60%;

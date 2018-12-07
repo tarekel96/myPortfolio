@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import { Button} from "react-bootstrap";
 import resumeData from "../resumeData";
 export default class Resume extends Component {
   constructor(props) {
@@ -106,7 +107,18 @@ export default class Resume extends Component {
               id="skillsDiv postpreview"
               // style={{ visibility: "hidden" }}
             >
-              {this.state.skills}
+              <span>* indicates I have a certification for that skill</span>
+              <ul>
+                <li>- HTML/CSS*</li>
+                <li>- JavaScript/jQuery*</li>
+                <li>- Node.js & Express*</li>
+                <li>- React.js*</li>
+                <li>- SQL & NoSQL Databases*</li>
+                <li>- C#</li>
+                <li>- Python</li>
+                <li>- Google Firebase DB</li>
+              </ul>
+              {/* {this.state.skills} */}
             </div>
           </div>
         </div>
