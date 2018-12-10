@@ -107,7 +107,9 @@ export default class Resume extends Component {
               id="skillsDiv postpreview"
               // style={{ visibility: "hidden" }}
             >
-              <span>* indicates I have a certification for that skill</span>
+              <span className="spanClass">
+                * indicates I have a certification for that skill
+              </span>
               <ul>
                 <li>- HTML/CSS*</li>
                 <li>- JavaScript/jQuery*</li>

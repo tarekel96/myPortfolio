@@ -47,8 +47,8 @@ export default class Header extends Component {
               <h3
                 style={{
                   color: "#fff",
-                  fontFamily: "sans-serif ",
-                  fontSize: 17,
+                  fontFamily: "Roboto Slab",
+                  fontSize: 19,
                   textAlign: "justify"
                 }}
               >

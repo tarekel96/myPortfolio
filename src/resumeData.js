@@ -5,7 +5,7 @@ let resumeData = {
   linkedinId: "0a2b1a132",
   skypeid: "Your skypeid",
   roleDescription:
-    "I am a Full Stack Web Developer specializing in MERN Stack programming that recently graduated from the UCI Full Stack Coding Bootcamp. I am currently looking for unique, full stack web development challenges to begin my career in software engineering.Before I attended the bootcamp, I graduated from the University of San Diego with a Bachelor's in Business Administration. My previous experiences in business and healthcare have contributed to make me a well rounded student.",
+    "I am a Full Stack Web Developer specializing in MERN Stack programming that recently graduated from the UCI Full Stack Coding Bootcamp. I am currently looking for unique, full stack web development challenges to begin my career in software engineering. Before I attended the bootcamp, I graduated from the University of San Diego with a Bachelor's in Business Administration. My previous experiences in business and healthcare have contributed to make me a well rounded student.",
   /* roleDescription2:
     "Before I attended the bootcamp, I graduated from the University of San Diego with a Bachelor's in Business Administration. My previous experiences in business and healthcare have contributed to make me a well rounded student.", */
   socialLinks: [

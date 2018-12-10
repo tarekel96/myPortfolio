@@ -344,6 +344,12 @@ ul#nav li.current a {
 /*----------------------------------------------*/
 
 /* skills button */
+
+/* #skillsDiv {
+  font-family: "Roboto Slab", serif;
+  color: red;
+} */
+
 #viewButton {
   margin-top: 5px;
   color: rgb(208, 216, 204);
@@ -357,14 +363,21 @@ ul#nav li.current a {
   padding: 0;
   text-align: left;
   color: black;
+  /* font-family: "Roboto Slab", serif; */
 }
 /* .bars .skills {
   margin-top: 36px;
   list-style: none;
 } */
+.spanClass {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+}
 .bars li {
   position: relative;
   color: black;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
   /* border: normal darkgray; */
   /* background: #ccc; */
   /* height: 42px; */
@@ -1209,6 +1222,7 @@ footer {
   text-align: center;
   position: relative;
   background-color: lightseagreen;
+  font-family: 'Roboto Slab', serif;
 }
 
 footer a,
