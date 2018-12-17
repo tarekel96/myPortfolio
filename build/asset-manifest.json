@@ -1,0 +1,17 @@
+{
+  "main.css": "/static/css/main.261fa19c.chunk.css",
+  "main.js": "/static/js/main.f1d78444.chunk.js",
+  "main.js.map": "/static/js/main.f1d78444.chunk.js.map",
+  "static/js/1.ecb4d340.chunk.js": "/static/js/1.ecb4d340.chunk.js",
+  "static/js/1.ecb4d340.chunk.js.map": "/static/js/1.ecb4d340.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/jwt-mern.png": "/static/media/jwt-mern.7b36ec0a.png",
+  "static/media/socialSportsMeetup.png": "/static/media/socialSportsMeetup.9604db5a.png",
+  "static/media/toesntictacs.png": "/static/media/toesntictacs.95c4c480.png",
+  "static/media/ombdMovie.png": "/static/media/ombdMovie.181cf08f.png",
+  "static/css/main.261fa19c.chunk.css.map": "/static/css/main.261fa19c.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.fd51f4ca0f2f77c951fdd1a11fd8eaee.js": "/precache-manifest.fd51f4ca0f2f77c951fdd1a11fd8eaee.js",
+  "service-worker.js": "/service-worker.js"
+}
