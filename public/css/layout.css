@@ -162,6 +162,9 @@ header .scrolldown a:hover {
 #nav-wrap > a.mobile-btn {
   display: none;
 }
+#nav-wrap > button.mobile-btn {
+  display: none;
+}
 
 ul#nav {
   min-height: 48px;
@@ -562,6 +565,7 @@ ul#nav li.current a {
   padding-bottom: 30px;
   /* Full height */
   height: 100%;
+  width: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -1222,7 +1226,7 @@ footer {
   text-align: center;
   position: relative;
   background-color: lightseagreen;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 footer a,

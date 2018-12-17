@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Button, Grid, Row, Col, Thumbnail } from "react-bootstrap";
 export default class Porfolio extends Component {
   render() {
-    let resumeData = this.props.resumeData;
+    // let resumeData = this.props.resumeData;
     return (
       <Grid className="projects">
         <h2 id="appHeading">Applications</h2>
