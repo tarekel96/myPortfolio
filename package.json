@@ -20,12 +20,14 @@
     "eject": "react-scripts eject",
     "start:dev": "react-scripts start",
     "npm dev": "react-scripts start",
-    "dev": "react-scripts start"
+    "dev": "react-scripts start",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "heroku-run-build-script": true
 }
