@@ -116,9 +116,7 @@ export default class Resume extends Component {
                 <li>- Node.js & Express*</li>
                 <li>- React.js*</li>
                 <li>- SQL & NoSQL Databases*</li>
-                <li>- C#</li>
                 <li>- Python</li>
-                <li>- Google Firebase DB</li>
               </ul>
               {/* {this.state.skills} */}
             </div>

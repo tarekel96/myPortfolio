@@ -80,16 +80,10 @@ let resumeData = {
       skillname: "JQuery"
     },
     {
-      skillname: "C #"
-    },
-    {
       skillname: "Python"
     },
     {
       skillname: "MySQL"
-    },
-    {
-      skillname: "Firebase"
     }
   ],
   portfolio: [
