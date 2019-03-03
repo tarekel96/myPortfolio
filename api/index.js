@@ -7,4 +7,9 @@ router.get("/", (req, res) => {
   });
 });
 
+// test if can get form data from React front-end
+router.post("/form", (req, res) => {
+  console.log(req.body);
+});
+
 module.exports = router;
