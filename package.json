@@ -1,34 +1,33 @@
 {
-  "name": "resume",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "express": "^4.16.4",
-    "path": "^0.12.7",
-    "react": "^16.6.0",
-    "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1"
-  },
-  "engines": {
-    "node": "v8.11.3"
-  },
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "proxy": "http://localhost:8080",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start:dev": "react-scripts start",
-    "npm dev": "react-scripts start",
-    "dev": "react-scripts start",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "start": "if process.env.NODE_ENV === 'production' && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "client": "cd client && npm run start",
+    "start:dev": "concurrently \"nodemon -- ignore 'client/* '\" \"npm run client\"",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "heroku-run-build-script": true
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarekel96/myPortfolio.git"
+  },
+  "author": "tarek el-hajjaoui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarekel96/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/tarekel96/myPortfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "if-env": "^1.0.4",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7"
+  }
 }

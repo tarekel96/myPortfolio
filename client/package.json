@@ -1,0 +1,32 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.6.0",
+    "react-scripts": "^2.1.5"
+  },
+  "engines": {
+    "node": "v8.11.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:dev": "react-scripts start",
+    "npm dev": "react-scripts start",
+    "dev": "react-scripts start",
+    "heroku-postbuild": "echo Skip build on Heroku"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "heroku-run-build-script": true
+}
