@@ -573,8 +573,9 @@ ul#nav li.current a {
   background-size: cover;
 }
 
-#projectRow {
+.projectRow {
   margin-top: 20px;
+  display: block;
 }
 
 #appHeading {
