@@ -2,6 +2,16 @@ const express = require("express");
 const router = express.Router();
 const nodemailer = require("nodemailer");
 
+const user_name = "tecoding@gmail.com";
+const refresh_token = "1/1jVFOtlvs8eFGP3deonh3H8UBYdywh6KCNIVs41XmL0";
+const access_token =
+  "ya29.GlvHBrgjoKvs2_co9xCy0X0PnzfoU4ki6VHjPAiPXsbXZ4P7XKTT9rBEyXYfytoCylUQkNM-NCOQDfEsxx-PJuV5Nspl7dA05r-BUEy1uepva3kfPlnMRn9PHMFD";
+const client_id =
+  "377055266653-40r4ouldp9a5stbk1p9sc5q071v50h09.apps.googleusercontent.com";
+const client_secret = "ajAA7iqBJ8I6CYG9WTcvy1zY";
+
+const email_to = "tarekel96@gmail.com";
+
 router.get("/", (req, res) => {
   res.json({
     api: "Api router hit"
@@ -21,26 +31,39 @@ router.post("/form", (req, res) => {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
-      port: 587,
-      secure: false, // true for 465, false for other ports
+      service: "Gmail",
       auth: {
-        user: "caterina.price@ethereal.email", // generated ethereal user
-        pass: "hRsAWGrgvcWvh8Ky2Q" // generated ethereal password
+        type: "OAuth2",
+        clientId: client_id,
+        clientSecret: client_secret
       }
+    });
+
+    transporter.on("token", token => {
+      console.log("A new access token was generated");
+      console.log("User: %s", token.user);
+      console.log("Access Token: %s", token.accessToken);
+      console.log("Expires: %s", new Date(token.expires));
     });
 
     // setup email data with unicode symbols
     let mailOptions = {
-      from: `${req.body.email}`, // sender address
-      to: "caterina.price@ethereal.email", // list of receivers
+      from: user_name, // sender address
+      to: email_to, // list of receivers
       subject: `${req.body.subject}`, // Subject line
       text: `${req.body.message}`, // plain text body
       html: `<h2>Hello Tarek, </h2><p>${
         req.body.message
       }</p> <h3>From:  <span>${req.body.name}</span></h3> 
      
-      <h3>Email: <span>${req.body.email}</span></h3> ` // html body
+      <h3>Email: <span>${req.body.email}</span></h3> `, // html body
+
+      auth: {
+        user: user_name,
+        refreshToken: refresh_token,
+        accessToken: access_token
+        // expires      : 1494388182480
+      }
     };
 
     // send mail with defined transport object
