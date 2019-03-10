@@ -2,15 +2,23 @@ const express = require("express");
 const router = express.Router();
 const nodemailer = require("nodemailer");
 
-const user_name = "tecoding@gmail.com";
-const refresh_token = "1/1jVFOtlvs8eFGP3deonh3H8UBYdywh6KCNIVs41XmL0";
-const access_token =
-  "ya29.GlvHBrgjoKvs2_co9xCy0X0PnzfoU4ki6VHjPAiPXsbXZ4P7XKTT9rBEyXYfytoCylUQkNM-NCOQDfEsxx-PJuV5Nspl7dA05r-BUEy1uepva3kfPlnMRn9PHMFD";
-const client_id =
-  "377055266653-40r4ouldp9a5stbk1p9sc5q071v50h09.apps.googleusercontent.com";
-const client_secret = "ajAA7iqBJ8I6CYG9WTcvy1zY";
+const user_name = process.env.USER_NAME;
+const refresh_token = process.env.REFRESH_TOKEN;
+const access_token = process.env.ACCESS_TOKEN;
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
 
-const email_to = "tarekel96@gmail.com";
+const email_to = process.env.EMAIL_TO;
+console.log(process.env.USER_NAME);
+// const user_name = "tecoding@gmail.com";
+// const refresh_token = "1/1jVFOtlvs8eFGP3deonh3H8UBYdywh6KCNIVs41XmL0";
+// const access_token =
+//   "ya29.GlvHBrgjoKvs2_co9xCy0X0PnzfoU4ki6VHjPAiPXsbXZ4P7XKTT9rBEyXYfytoCylUQkNM-NCOQDfEsxx-PJuV5Nspl7dA05r-BUEy1uepva3kfPlnMRn9PHMFD";
+// const client_id =
+//   "377055266653-40r4ouldp9a5stbk1p9sc5q071v50h09.apps.googleusercontent.com";
+// const client_secret = "ajAA7iqBJ8I6CYG9WTcvy1zY";
+
+// const email_to = "tarekel96@gmail.com";
 
 router.get("/", (req, res) => {
   res.json({
